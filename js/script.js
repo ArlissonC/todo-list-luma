@@ -9,6 +9,10 @@ iconTheme.addEventListener('click', () => {
     }
 });
 
+// Tarefas restates
+const itemCount = document.querySelector('.count span');
+itemCount.innerText = document.querySelectorAll('.list').length;
+
 // Variáveis
 const btnAdd = document.querySelector('.todo-input button');
 const todoInput = document.getElementById('todo-input');
@@ -46,4 +50,9 @@ const addTodos = text => {
     }
     todo.append(todoLi);
     updateCount(1);
+}
+
+// Contagem tarefas
+const updateCount = todo => {
+  itemCount.innerText = +itemCount.innerText + todo;
 }
