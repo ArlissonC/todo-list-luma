@@ -16,7 +16,7 @@ body {
 
 /* Background Header */
 .background {
-  background: url("/images/bg-desktop-dark.jpg") no-repeat;
+  background: url(/images/bg-desktop-dark.jpg) no-repeat;
   background-size: cover;
   width: 100vw;
   height: 40vh;
@@ -194,7 +194,7 @@ body.light {
 }
 
 body.light .background {
-  background: url("/images/bg-desktop-light.jpg") no-repeat;
+  background: url(/images/bg-desktop-light.jpg) no-repeat;
   background-size: cover;
   width: 100vw;
   height: 40vh;
@@ -244,7 +244,7 @@ body.light .clear:hover {
 /* Mobile */
 @media (max-width: 600px) {
   .background {
-    background: url("/images/bg-mobile-dark.jpg") no-repeat;
+    background: url(/images/bg-mobile-dark.jpg) no-repeat;
     background-size: cover;
     height: 35vh;
   }
@@ -277,7 +277,7 @@ body.light .clear:hover {
   }
 
   body.light .background {
-    background: url("/images/bg-mobile-light.jpg") no-repeat;
+    background: url(/images/bg-mobile-light.jpg) no-repeat;
     background-size: cover;
   }
 }
