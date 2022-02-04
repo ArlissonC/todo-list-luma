@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Todo</title>
+</head>
+
+<body>
+  <div class="background"></div>
+  <main class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <h1>Todo</h1>
+      <img class="theme" src="images/icon-sun.svg" alt="theme-icon" />
+    </header>
+    <div class="todo-input">
+      <button></button>
+      <input name="todo-input" id="todo-input" type="text" placeholder="Adicionar nova tarefa..." />
+    </div>
+    <!-- Tarefas -->
+    <section class="todos">
+      <ul id="simpleList"></ul>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="count"><span></span> Tarefas restantes</div>
+      <section class="filters">
+        <label>
+          <input type="radio" name="filter" id="all" checked />
+          <span>Todos</span>
+        </label>
+        <label>
+          <input type="radio" name="filter" id="active" />
+          <span>Ativo</span>
+        </label>
+        <label>
+          <input type="radio" name="filter" id="completed" />
+          <span>Completo</span>
+        </label>
+      </section>
+      <div class="clear">Limpar completos</div>
+    </footer>
+  </main>
+  <script src="js /script.js"></script>
+</body>
+
+</html>
