@@ -74,3 +74,33 @@ document.querySelectorAll('.filters input').forEach(radio => {
       filterTodo(e.target.id);
   });
 });
+
+// Verifica o ID de cada filtro
+const filterTodo = id => {
+  const allItems = document.querySelectorAll('li');
+  switch (id) {
+    case 'all':
+    allItems.forEach(todo => {
+    todo.classList.remove('hidden');
+    });  
+    break;
+    case 'active':
+    allItems.forEach(todo => {
+      if (todo.querySelector('input').checked){
+        todo.classList.add('hidden')
+      } else {
+        todo.classList.remove('hidden')
+      }
+    });
+    break;
+    default:
+    allItems.forEach(todo => {
+      if (todo.querySelector('input').checked){
+          todo.classList.remove('hidden')
+      } else {
+          todo.classList.add('hidden')
+      }
+    });
+    break;
+  }
+}
