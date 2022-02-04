@@ -104,3 +104,12 @@ const filterTodo = id => {
     break;
   }
 }
+
+// Limpar completos
+const clear = document.querySelector('.clear');
+clear.addEventListener('click', () => {
+    const itemChecked = document.querySelectorAll('.list input[type="checkbox"]:checked');
+    itemChecked.forEach(todo=>{
+        removeTodos(todo.closest('li'));
+    });
+});
