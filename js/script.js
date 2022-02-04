@@ -67,3 +67,10 @@ todo.addEventListener('click', e => {
       removeTodos(e.target.parentElement);
   }
 });
+
+// Filtros
+document.querySelectorAll('.filters input').forEach(radio => {
+  radio.addEventListener('change', e => {
+      filterTodo(e.target.id);
+  });
+});
