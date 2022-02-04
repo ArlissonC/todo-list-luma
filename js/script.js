@@ -56,3 +56,14 @@ const addTodos = text => {
 const updateCount = todo => {
   itemCount.innerText = +itemCount.innerText + todo;
 }
+
+// Remover tarefa
+const removeTodos = todo => {
+  todo.remove();
+  updateCount(-1);
+}
+todo.addEventListener('click', e => {
+  if (e.target.classList.contains('remove')) {
+      removeTodos(e.target.parentElement);
+  }
+});
